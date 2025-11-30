@@ -4,9 +4,9 @@ import os
 import sys
 
 
-def mai():
+def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tools_django.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'codanics.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -19,4 +19,4 @@ def mai():
 
 
 if __name__ == '__main__':
-    mai()
+    main()
